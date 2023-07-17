@@ -2,36 +2,37 @@
 <html>
 <head>
 	<title>BMI Kalkulator</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="js/script.js"></script>
 </head>
 <body>
+	<h1>Body mass index (BMI) Calculator</h1>
 	<div id="kolomhasil">
-		<h1 id="hasilhitungan">Hasil</h1>
+		<h2 id="hasilhitungan">Hasil</h1>
 		<h3 id="keterangan">Keterangan</h3>
 	</div>
-	<div class="kolomform">
-		<form id="formkalkulasi"required>
+	<div>
+		<form id="formkalkulasi">
 			<label>Jenis Kelamin<br>
 				<select id="gender">
 					<option value="default">Pilih</option>
         			<option value="pria">Pria</option>
         			<option value="wanita">Wanita</option>
-     			 </select>
-				
-				<label for="wanita">Wanita</label>
-			</label><br>
-			
-			<label>Usia</label><br>
-			<input type="number" id="usia"><br>
-			<label>Berat Badan (kg)</label><br>
-			<input type="number" id="berat" maxlength="3" minlength="3"><br>
-			<label>Tinggi Badan (cm)</label><br>
-			<input type="number" id="tinggi" maxlength="3" minlength="2"><br>
-			
-			<button onclick="hitung()">Calculate</button>
-			<input type="reset" value="Reset">
+     			 </select><br>
+			<label for="usia">Usia</label><br>
+			<input type="number" id="usia" name="usia"><br>
+			<label for="berat">Berat Badan (kg)</label><br>
+			<input type="number" id="berat" name="berat"><br>
+			<label for="tinggi">Tinggi Badan (cm)</label><br>
+			<input type="number" id="tinggi" name="tinggi"><br>
+			<div class="kolombutton">
+			<button id="calculatebutton" onclick="hitung()">Calculate</button>
+			<input class="reset" type="reset" value="Reset">
+		</div>	
 		</form>
+	</div>
+	<div class="penjelasan">
+		asdasda
 	</div>
 </body>
 </html>

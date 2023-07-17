@@ -1,0 +1,41 @@
+body{
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+    background-color: #27374D;
+}
+#kolomhasil{
+    background-color: #9DB2BF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.kolombutton{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#formkalkulasi{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #526D82;
+}
+input{
+    width: 400px;
+    height: 30px;
+}
+.kolombutton input,
+.kolombutton button{
+    width: 200px;
+    height: 50px;
+}
+select{
+    width: 410px;
+    height: 30px;
+}

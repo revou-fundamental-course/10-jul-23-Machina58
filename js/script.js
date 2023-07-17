@@ -8,6 +8,11 @@ console.log("success");
  	let berat = document.getElementById("berat").value;
  	//mengambil inputan dari kolom tinggi
  	let tinggidalamcm = document.getElementById("tinggi").value;
+
+	if(gender == "default" || isNaN(usia) || isNaN(berat) || isNaN(tinggidalamcm)){
+		alert("Mohon diisikan kolom terlebih dahulu");
+		
+	}else{
  	//mengubah tinggi dari cm ke m
  	let  tinggi = tinggidalamcm / 100;
  	//perhitungan BMI
@@ -28,13 +33,14 @@ console.log("success");
  	}
  	//dibawah ini rumus untuk keterangan
  	if(hasil <18.5){
- 		document.getElementById("keterangan").innerHTML = "Berat badan anda kurang";
+ 		document.getElementById("keterangan").innerHTML = "Kekurangan berat badan";
  	}else if(hasil >= 18.5){
- 		document.getElementById("keterangan").innerHTML = "Berat badan anda normal";
+ 		document.getElementById("keterangan").innerHTML = "Normal (ideal)";
  	}else if(hasil >= 25){
- 		document.getElementById("keterangan").innerHTML = "Berat badan anda berlebih";
+ 		document.getElementById("keterangan").innerHTML = "Kelebihan berat badan";
  	}else if(hasil >=30){
- 		document.getElementById("keterangan").innerHTML = "Berat badan anda obesitas";
+ 		document.getElementById("keterangan").innerHTML = "Kegemukan (Obesitas)";
  	}
  	event.preventDefault(); 
- }
+ };
+};
