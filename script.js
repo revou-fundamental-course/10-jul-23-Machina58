@@ -1,11 +1,12 @@
 console.log("success");
  function hitung(){
-
+ 	//mengambil inputan dari kolom gender
+ 	let gender = document.getElementById("gender").value;
  	//mengambil inputan dari kolom usia
  	let usia = document.getElementById("usia").value;
- 	 	//mengambil inputan dari kolom berat
+ 	//mengambil inputan dari kolom berat
  	let berat = document.getElementById("berat").value;
- 	 	//mengambil inputan dari kolom tinggi
+ 	//mengambil inputan dari kolom tinggi
  	let tinggidalamcm = document.getElementById("tinggi").value;
  	//mengubah tinggi dari cm ke m
  	let  tinggi = tinggidalamcm / 100;
@@ -14,7 +15,6 @@ console.log("success");
  	//.toFixed(2) = untuk membulatkan hasil hingga 2 digit setelah koma
  	hasil = hasil.toFixed(2);
 
- 	console.log(usia);
  	//dibawah ini untuk validasi umur
  	if( usia >=90 ){
  		alert("Harap input usia yang benar :)")
@@ -37,3 +37,4 @@ console.log("success");
  		document.getElementById("keterangan").innerHTML = "Berat badan anda obesitas";
  	}
  	event.preventDefault(); 
+ }
