@@ -6,7 +6,31 @@
 	<script src="script.js"></script>
 </head>
 <body>
-	
+	<div id="kolomhasil">
+		<h1 id="hasilhitungan">Hasil</h1>
+		<h3 id="keterangan">Keterangan</h3>
+	</div>
+	<div class="kolomform">
+		<form id="formkalkulasi">
+			<label>Jenis Kelamin<br>
+				<input type="radio" id="pria" name="jeniskelamin" value="pria" >
+				<label for="pria">Pria</label>
+				<input type="radio" id="wanita" name="jeniskelamin" value="wanita">
+				<label for="wanita">Wanita</label>
+			</label><br>
+			
+			<label>Usia<br><input type="number" id="usia" max="100"></label><br>
+			<label>Berat Badan (kg)<br><input type="number" id="berat"></label><br>
+			<label>Tinggi Badan (cm)<br><input type="number" id="tinggi"></label><br>
+			
+			<button onclick="hitung()">Calculate</button>
+			<input type="reset" value="Reset">
+		</form>
+	</div>
 
+<script type="text/javascript">
+
+
+</script>
 </body>
 </html>
