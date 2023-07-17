@@ -11,7 +11,7 @@
 		<h3 id="keterangan">Keterangan</h3>
 	</div>
 	<div class="kolomform">
-		<form id="formkalkulasi">
+		<form id="formkalkulasi"required>
 			<label>Jenis Kelamin<br>
 				<input type="radio" id="pria" name="jeniskelamin" value="pria" >
 				<label for="pria">Pria</label>
@@ -19,18 +19,16 @@
 				<label for="wanita">Wanita</label>
 			</label><br>
 			
-			<label>Usia<br><input type="number" id="usia" max="100"></label><br>
-			<label>Berat Badan (kg)<br><input type="number" id="berat"></label><br>
-			<label>Tinggi Badan (cm)<br><input type="number" id="tinggi"></label><br>
+			<label>Usia</label><br>
+			<input type="number" id="usia"><br>
+			<label>Berat Badan (kg)</label><br>
+			<input type="number" id="berat" maxlength="3" minlength="3"><br>
+			<label>Tinggi Badan (cm)</label><br>
+			<input type="number" id="tinggi" maxlength="3" minlength="2"><br>
 			
 			<button onclick="hitung()">Calculate</button>
 			<input type="reset" value="Reset">
 		</form>
 	</div>
-
-<script type="text/javascript">
-
-
-</script>
 </body>
 </html>
