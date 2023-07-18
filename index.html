@@ -4,11 +4,14 @@
 	<title>BMI Kalkulator</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<script src="js/script.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
 </head>
 <body>
 	<h1>Body mass index (BMI) Calculator</h1>
 	<div id="kolomhasil">
-		<h2 id="hasilhitungan">Hasil</h1>
+		<h2 id="hasilhitungan">Hasil</h2>
 		<h3 id="keterangan">Keterangan</h3>
 	</div>
 	<div>
@@ -27,12 +30,64 @@
 			<input type="number" id="tinggi" name="tinggi"><br>
 			<div class="kolombutton">
 			<button id="calculatebutton" onclick="hitung()">Calculate</button>
-			<input class="reset" type="reset" value="Reset">
+			<!-- Guna untuk mereset form -->
+			<input class="reset" type="reset" value="Reset" onclick="resethasil()">
 		</div>	
 		</form>
 	</div>
 	<div class="penjelasan">
-		asdasda
+		Body Mass Index (BMI) atau yang sering dikenal dengan Indeks Massa Tubuh (IMT) adalah nilai ukur untuk mengetahui status gizi seseorang berdasarkan berat dan tinggi badannya. Nilai BMI (IMT) juga dapat menjadi alat skrining awal untuk mengetahui risiko seseorang terhadap suatu penyakit.<br>
+		Berikut ini adalah kategori dan interpretasi BMI.<br>
+		<table >
+			<tr>
+				<th>BMI</th>
+				<th>Status berat badan</th>
+			</tr>
+			<tr>
+				<td><18,5</td>
+				<td>Berat badan kurang (underweight)</td>
+			</tr>
+			<tr>
+				<td>18,5-24,9</td>
+				<td>Normal</td>
+			</tr>
+			<tr>
+				<td>25,0-29,9</td>
+				<td>Berat badan berlebih (overweight)</td>
+			</tr>
+			<tr>
+				<td>≥ 30</td>
+				<td>Obesitas</td>
+			</tr>
+		</table>
+		<br>
+		Mengetahui IMT membantu Anda untuk menjaga rasio lemak tubuh yang terkait dengan tinggi badan Anda. IMT juga memberi peringatan peluang risiko penyakit yang mungkin mengintai kesehatan Anda.<br><br>
+	IMT yang sehat umumnya mengarah pada kualitas hidup yang lebih bahagia dan lebih sehat. Sementara IMT yang tinggi berkaitan erat dengan risiko penyakit seperti diabetes tipe 2, penyakit jantung, dan tekanan darah tinggi.<br><br>
+	Mengetahui IMT berarti memberi pertimbangan bagi Anda dan tenaga kesehatan dalam mengambil keputusan mengenai kondisi kesehatan tubuh Anda.
+	<br><br>
+	Apabila anda termasuk dikategori kekurangan berat badan, segera mulai untuk hidup sehat, dengan banyak mengonsumsi makanan bergizi 4 sehat 5 sempurna, untuk dapat menghindari resiko-resiko dibawah ini : <br>
+	– Malnutrisi<br>
+	– Anemia<br>
+	– Osteoporosis karena kekurangan kalsium dan vitamin D<br>
+	– Masalah kesuburan dari siklus menstruasi tidak teratur<br>
+	– Risiko komplikasi operasi yang lebih tinggi<br>
+	– Pertumbuhan dan masalah perkembangan yang terhambat pada anak dan remaja<br><br>
+	Apabila anda termasuk dikategori kelebihan berat badan / obesitas, segera mulai untuk mengurangi konsumsi makanan ber lemak/tidak sehat, dan mengonsumsi makanan bergizi 4 sehat 5 sempurna, dan rajin olahraga, untuk dapat menghindari resiko-resiko dibawah ini :
+	– Diabetes tipe 2<br>
+	– Kolesterol LDL tinggi, kolesterol HDL rendah, atau kadar lipid darah yang tidak sehat<br>
+	– Penyakit jantung koroner<br>
+	– Stroke<br>
+	– Penyakit kantung empedu<br>
+	– Osteoartritis<br>
+	– Sleep apnea dan masalah pernapasan<br>
+	– Peradangan kronis dan peningkatan stres oksidatif<br>
+	– Kanker<br><br>
+
+<br><br>
+
+
+
 	</div>
+
 </body>
 </html>

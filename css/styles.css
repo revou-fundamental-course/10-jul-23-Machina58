@@ -1,6 +1,12 @@
+h1{
+    color : white;
+}
+h2{
+    font-size: 25px;
+}
 body{
     display: flex;
-
+    font-family: 'Titillium Web', sans-serif;
     justify-content: center;
     flex-direction: column;
     background-color: #27374D;
@@ -11,6 +17,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
 }
 .kolombutton{
     margin-top: 20px;
@@ -38,4 +45,14 @@ input{
 select{
     width: 410px;
     height: 30px;
+}
+
+table, th, td{
+    border: 1px solid black;
+    padding: 10px;
+    margin : 5px;   
+}
+.penjelasan{
+    background-color: white;
+    width: 50%;
 }
