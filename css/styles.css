@@ -54,5 +54,13 @@ table, th, td{
 }
 .penjelasan{
     background-color: white;
-    width: 50%;
+    width: 100%;
+}
+.kolompenjelasan{
+    background-color: #f0f7ff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+
 }
